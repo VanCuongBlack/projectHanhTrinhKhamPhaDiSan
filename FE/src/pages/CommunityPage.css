@@ -1,0 +1,39 @@
+.community-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 380px) 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .community-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.post-card {
+  position: relative;
+}
+
+.post-card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.comments button {
+  align-self: flex-start;
+}
+
+.like-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}

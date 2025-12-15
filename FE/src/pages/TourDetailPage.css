@@ -1,0 +1,73 @@
+.tour-detail {
+  gap: 1rem;
+}
+
+.price-box {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  min-width: 220px;
+  text-align: right;
+}
+
+.media-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.media-tile {
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  min-height: 140px;
+  box-shadow: var(--shadow);
+}
+
+.media-tile.placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: #eef2f7;
+}
+
+.itinerary {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.itinerary td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  width: min(420px, 90vw);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  transform: scale(1);
+  animation: scaleFade 0.18s ease;
+}
+
+@keyframes scaleFade {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,103 @@
+.app-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.section-shell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.surface-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: var(--shadow-md);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform var(--motion-fast) var(--motion-ease), box-shadow var(--motion-base) var(--motion-ease), background-color var(--motion-base) var(--motion-ease);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-2));
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-ghost {
+  background: #fff;
+  border-color: rgba(15, 23, 42, 0.12);
+  color: var(--color-text);
+}
+
+.btn-ghost:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.pill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius-pill);
+  background: #e0f2fe;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.badge-soft {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-md);
+  padding: 0.35rem 0.6rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  transition: border-color var(--motion-fast) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.fade-card {
+  animation: fadeInCard 0.4s var(--motion-ease);
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

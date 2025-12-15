@@ -1,0 +1,40 @@
+.checkout {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-card {
+  max-width: 900px;
+  width: 100%;
+}
+
+.checkout-body {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .checkout-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guide-info {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.checkout-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid #e2e8f0;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}

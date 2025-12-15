@@ -1,0 +1,11 @@
+.partner-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.partner-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
